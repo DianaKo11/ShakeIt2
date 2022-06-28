@@ -1,0 +1,323 @@
+﻿body {
+    direction: rtl;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    margin: auto;
+}
+
+
+
+
+/*NAVIGATIN BAR*/
+
+
+nav {
+    background: #FE4F60;
+    width: 100%;
+    position: fixed;
+    font-family: 'Segoe UI';
+    top: 0px;
+    z-index: 1000;
+    box-shadow: 0.5px 0.5px 5px 1px darkgrey;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-left: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.logo {
+    width: 135px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+nav div {
+    float: right;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+    nav a:hover {
+        color: #FFFAB3;
+    }
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul {
+    display: block;
+    width: 120px;
+    background-color: #FE4F60;
+}
+
+nav ul li ul li:hover {
+    background-color: #DE4251;
+}
+
+.headerBackgroung {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    top: 30px;
+}
+
+
+
+
+
+/*CONTENT*/
+
+h1 {
+    font: calibri;
+    font-size: 40px;
+    padding-top: 1px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    margin-bottom: 80px
+}
+
+h2 {
+    font: calibri;
+    font-size: 26px;
+    text-align: center;
+    width: 100%;
+    background-color: #FFD15D
+}
+
+
+div ul li {
+    top: 100px;
+    right: 420px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.recipe, .recipe2, .recipe3, .recipe4, .recipe5 {
+    margin: 55px 150px;
+}
+
+.minilemon {
+    margin: 3px 8px;
+    width: 3%;
+    height: 3%;
+}
+
+.cocktailImg {
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+#cocktailImg4 {
+    float: left;
+    width: 20%;
+    height: 20%;
+}
+
+section > p {
+    /*    margin: auto;*/
+    margin-right: 320px;
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+
+
+
+/*GALLERY*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    top: 45px;
+    position: relative;
+    width: 50%;
+    /*    margin-left: 10px;
+    margin-right: auto;*/
+    margin: auto;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+
+.cursor {
+    cursor: pointer;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.next {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.imageNum {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.caption-container:hover {
+    color: gold;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.column {
+    float: left;
+    width: 20%;
+}
+
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 400px;
+}
+
+
+
+
+
+
+
+/*FOOTER*/
+
+
+footer {
+    background: linear-gradient( #FE4F60, #ffc371);
+
+    display: flex;
+    padding: 5px 0px;
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
+    margin-top: 100px;
+}
+
+.footerUl {
+    text-align: right;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+
+footer ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+footer ul h4:hover {
+    color: white;
+}
+
+.bottomlogo {
+    width: 135px;
+    height: 40px;
+    margin: auto;
+    margin-right: 80px;
+}
+
+#emailUs {
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-top: 55px;
+}
